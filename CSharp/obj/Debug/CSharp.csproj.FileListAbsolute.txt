@@ -1,0 +1,7 @@
+D:\Users\thiba\Bureau\CSharp\obj\Debug\CSharp.csproj.AssemblyReference.cache
+D:\Users\thiba\Bureau\CSharp\obj\Debug\CSharp.csproj.CoreCompileInputs.cache
+D:\Users\thiba\Bureau\CSharp\bin\Debug\CSharp.exe.config
+D:\Users\thiba\Bureau\CSharp\bin\Debug\CSharp.exe
+D:\Users\thiba\Bureau\CSharp\bin\Debug\CSharp.pdb
+D:\Users\thiba\Bureau\CSharp\obj\Debug\CSharp.exe
+D:\Users\thiba\Bureau\CSharp\obj\Debug\CSharp.pdb

@@ -1,0 +1,6 @@
+D:\Users\thiba\Bureau\CSharp\bin\Release\CSharp.exe.config
+D:\Users\thiba\Bureau\CSharp\bin\Release\CSharp.exe
+D:\Users\thiba\Bureau\CSharp\bin\Release\CSharp.pdb
+D:\Users\thiba\Bureau\CSharp\obj\Release\CSharp.csproj.CoreCompileInputs.cache
+D:\Users\thiba\Bureau\CSharp\obj\Release\CSharp.exe
+D:\Users\thiba\Bureau\CSharp\obj\Release\CSharp.pdb
