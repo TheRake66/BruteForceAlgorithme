@@ -4,3 +4,10 @@ D:\Users\thiba\Bureau\CSharp\bin\x64\Release\CSharp.pdb
 D:\Users\thiba\Bureau\CSharp\obj\x64\Release\CSharp.csproj.CoreCompileInputs.cache
 D:\Users\thiba\Bureau\CSharp\obj\x64\Release\CSharp.exe
 D:\Users\thiba\Bureau\CSharp\obj\x64\Release\CSharp.pdb
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\obj\x64\Release\CSharp.csproj.AssemblyReference.cache
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\obj\x64\Release\CSharp.csproj.CoreCompileInputs.cache
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\obj\x64\Release\CSharp.exe
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\obj\x64\Release\CSharp.pdb
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\bin\x64\Release\CSharp.exe.config
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\bin\x64\Release\CSharp.exe
+D:\Users\thiba\Bureau\BruteForceAlgorithme\CSharp\bin\x64\Release\CSharp.pdb

@@ -23,7 +23,7 @@ namespace CSharp
 
             // Calcul des variables
             char[] carray = charset.ToCharArray();
-            int csize = charset.carray;
+            int csize = carray.Length;
             int[] array = new int[maxsize];
             for (int i = 0; i < maxsize; i++)
             {
