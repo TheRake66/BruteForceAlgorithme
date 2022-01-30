@@ -21,7 +21,7 @@ $carray = StringSplit($charset, '', 2)
 $csize = UBound($carray)
 Dim $array[$maxsize + 1]
 For $i = 0 To $maxsize
-	$array[$i] = $i < $minsize ? 0 : -1
+    $array[$i] = $i < $minsize ? 0 : -1
 Next
 $maxrang = $maxsize - 1
 
@@ -31,45 +31,45 @@ While 1
 
 
     ; Reset et increment
-	$password = ""
-	$array[0] += 1
+    $password = ""
+    $array[0] += 1
 
 
-	; Calcul de l'array
-	For $i = 0 To $maxsize
+    ; Calcul de l'array
+    For $i = 0 To $maxsize
 
 
-		; Gestion du calcul de base
-		If $array[$i] == $csize Then
-			If $i < $maxrang Then
-				$array[$i] = 0
-				$array[$i + 1] += 1
-			Else
-				Exit ; Fin
-			EndIf 
-		EndIf	
-		
-		
-		; Conversion en caracteres
-		If $array[$i] > -1 Then
-			$password &= $carray[$array[$i]]
-		Else
-			ExitLoop
-		EndIf
+        ; Gestion du calcul de base
+        If $array[$i] == $csize Then
+            If $i < $maxrang Then
+                $array[$i] = 0
+                $array[$i + 1] += 1
+            Else
+                Exit ; Fin
+            EndIf 
+        EndIf    
+        
+        
+        ; Conversion en caracteres
+        If $array[$i] > -1 Then
+            $password &= $carray[$array[$i]]
+        Else
+            ExitLoop
+        EndIf
 
 
-	Next
+    Next
 
 
     ; Hash le mot de passe genere en sha256
     $hashed = StringMid(_Crypt_HashData($password & $salt, $CALG_SHA_256), 3)
 
 
-	; Verifi la correspondance
+    ; Verifi la correspondance
     If $hashed = $hash Then
-	    ConsoleWrite('Le mot de passe est : "' & $password & '"' & @CRLF)
+        ConsoleWrite('Le mot de passe est : "' & $password & '"' & @CRLF)
         Exit ; Fin
     EndIf
-	
-	
+    
+    
 WEnd
