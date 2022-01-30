@@ -38,7 +38,6 @@ while True:
                 array[i] = 0
                 array[i + 1] += 1
             else:
-                print(rang)
                 sys.exit(0) # Fin
 				
                 

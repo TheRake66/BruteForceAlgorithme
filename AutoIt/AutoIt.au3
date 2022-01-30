@@ -18,7 +18,7 @@ $charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghikjlmnopqrstuvwxyz[]~@#$
 
 ; Calcul des variables
 $carray = StringSplit($charset, '', 2)
-$csize = UBound($carray) - 1
+$csize = UBound($carray)
 Dim $array[$maxsize + 1]
 For $i = 0 To $maxsize
 	$array[$i] = $i < $minsize ? 0 : -1
@@ -40,7 +40,7 @@ While 1
 
 
 		; Gestion du calcul de base
-		If $array[$i] > $csize Then
+		If $array[$i] == $csize Then
 			If $i < $maxrang Then
 				$array[$i] = 0
 				$array[$i + 1] += 1
