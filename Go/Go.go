@@ -6,16 +6,21 @@ import (
 	"encoding/hex"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
 
 	// Definition des variables
-	tobrute := "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+	hash := "6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090"
+	salt := "123"
 	minsize := 0
-	maxsize := 20
-	charset := "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghikjlmnopqrstuvwxyzÀÁÂÃÄÇÈÉÊËÌÍÏÑÒÓÔÕÖŠÚÛÜÙÝŸŽàáâãäçèéêëìíîïñòóôõöšúûüùýÿž[]~@#$-_+{};:,./\\? "
-	csize := len(charset)
+	maxsize := 10
+	charset := "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghikjlmnopqrstuvwxyz[]~@#$-_+{};:,./\\?"
+
+	// Calcul des variables
+	carray := strings.Split(charset, "")
+	csize := len(carray)
 	array := make([]int, 0)
 	for i := 0; i < maxsize; i++ {
 		if i < minsize {
@@ -48,7 +53,7 @@ func main() {
 
 			// Conversion en caracteres
 			if array[i] > -1 {
-				password += string(charset[array[i]])
+				password += carray[array[i]]
 			} else {
 				break
 			}
@@ -56,15 +61,14 @@ func main() {
 		}
 
 		// Hash le mot de passe genere en sha256
-		h := sha256.Sum256([]byte(password))
+		h := sha256.Sum256([]byte(password + salt))
 		hashed := hex.EncodeToString(h[:])
 
 		// Verifi la correspondance
-		if string(hashed) == tobrute {
+		if string(hashed) == hash {
 			fmt.Print("Le mot de passe est : \"" + password + "\"")
 			os.Exit(0) // Fin
 		}
 
 	}
-
 }
