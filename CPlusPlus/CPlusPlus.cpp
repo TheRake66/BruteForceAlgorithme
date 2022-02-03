@@ -1,6 +1,4 @@
-// CPlusPlus.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
+// Importation des bibliotheques
 #include <iostream>
 #include <string>
 #include "sha256.h"
@@ -9,6 +7,8 @@ using namespace std;
 
 int main()
 {
+
+
     // Definition des variables
     string hash = "6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090";
     string salt = "123";
